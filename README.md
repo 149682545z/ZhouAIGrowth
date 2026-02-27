@@ -1,47 +1,36 @@
 # AI 知识库 (AI Knowledge Base)
 
-欢迎来到技术团队 AI 知识库！本项目旨在帮助团队成员掌握 AI 基础知识、提升提示词工程技巧、熟练使用各类 AI 工具，并将 AI 高效融入日常工作流中。
+欢迎来到技术团队 AI 知识库！我们将内容精简为三大核心板块，帮助你快速掌握 AI 技能。
 
 ## 📚 目录 (Table of Contents)
 
-### 1. [AI 常识 (AI Basics)](./AI常识/index.md)
-了解大语言模型 (LLM) 的基本概念、原理、能力边界以及关键术语（如 Token、Context Window）。
-- [LLM 基本概念](./AI常识/llm-concepts.md)
+### 1. [AI 基础 (Basics)](./1-AI基础/README.md)
+**"知其然，知其所以然"**
+- [LLM 核心概念](./1-AI基础/llm-concepts.md)
+- [提示词工程 (Prompt Engineering)](./1-AI基础/prompt-engineering.md)
+    - [最佳实践](./1-AI基础/prompt-best-practices.md)
+    - [常用技巧](./1-AI基础/prompt-techniques.md)
 
-### 2. [提示词工程 (Prompt Engineering)](./提示词工程/index.md)
-学习如何与 AI 高效沟通，编写高质量的提示词以获得最佳输出。
-- [最佳实践](./提示词工程/best-practices.md)
-- [常用技巧 (Zero-shot, CoT)](./提示词工程/techniques.md)
+### 2. [AI 工具 (Tools)](./2-AI工具/README.md)
+**"工欲善其事，必先利其器"**
+- [代码辅助工具 (Cursor, Copilot)](./2-AI工具/coding-tools.md)
+- [通用对话工具 (ChatGPT, DeepSeek)](./2-AI工具/general-tools.md)
+- [配置规范 (.cursorrules)](./2-AI工具/configuration.md)
+- [MCP 协议与推荐 Server](./2-AI工具/mcp-concepts.md)
 
-### 3. [AI 工具 (AI Tools)](./AI工具/index.md)
-探索和掌握主流 AI 工具的使用方法，包括代码辅助工具和通用对话工具。
-- [代码辅助工具 (Cursor, Copilot)](./AI工具/coding-tools.md)
-- [通用对话工具 (ChatGPT, Claude)](./AI工具/general-tools.md)
-
-### 4. [团队工作流 (Team Workflow)](./团队工作流/index.md)
-将 AI 深度集成到开发、测试和代码审查流程中，提升团队整体效率。
-- [Coding Workflow](./团队工作流/coding-workflow.md)
-
-### 5. [AI 配置规范 (Standards)](./AI配置规范/index.md)
-统一团队 AI 配置，确保代码质量和风格一致性。
-- [.cursorrules 最佳实践](./AI配置规范/index.md)
-
-### 6. [AI 技能树 (Skill Tree)](./AI技能树/index.md)
-从入门到精通，掌握 AI 辅助开发的高级技巧。
-- [懒人重构 (Lazy Refactoring)](./AI技能树/refactoring-with-ai.md)
-- [AI 驱动的 TDD](./AI技能树/tdd-with-ai.md)
-- [深度调试 (Deep Debugging)](./AI技能树/debugging-mastery.md)
-
-### 7. [前沿架构 (Frontier Architecture)](./前沿架构/index.md)
-探索 RAG 和 Agent 等前沿 AI 应用架构。
-- [RAG 设计模式](./前沿架构/rag-patterns.md)
-- [Agentic Workflows](./前沿架构/agentic-workflows.md)
-
-### 8. [MCP 协议 (Model Context Protocol)](./MCP协议/index.md)
-了解并使用 MCP 标准连接 AI 与数据。
-- [什么是 MCP](./MCP协议/index.md)
-- [推荐 Server](./MCP协议/recommended-servers.md)
+### 3. [AI 实战 (Action)](./3-AI实战/README.md)
+**"纸上得来终觉浅，绝知此事要躬行"**
+- [团队 Coding 工作流](./3-AI实战/coding-workflow.md)
+- **技能树**：
+    - [懒人重构](./3-AI实战/skills/refactoring.md)
+    - [AI 驱动 TDD](./3-AI实战/skills/tdd.md)
+    - [深度调试](./3-AI实战/skills/debugging.md)
+    - [Git AI 工作流](./3-AI实战/skills/git-workflow.md)
+    - [API 设计](./3-AI实战/skills/api-design.md)
+    - [语法生成 (SQL/Regex)](./3-AI实战/skills/syntax-gen.md)
+- **前沿架构**：
+    - [RAG 设计模式](./3-AI实战/architecture/rag-patterns.md)
+    - [Agentic Workflows](./3-AI实战/architecture/agentic-workflows.md)
 
 ---
-
-> 🚀 **目标**：通过 AI 赋能，让每一位团队成员都能成为“超级个体”，提升代码质量与开发效率。
+> 🚀 **目标**：打造最实用的 AI 工程师成长指南。

@@ -4,12 +4,12 @@
 
 ## 核心内容
 
-### [最佳实践 (Best Practices)](./best-practices.md)
+### [最佳实践 (Best Practices)](./prompt-best-practices.md)
 - **结构化提示词**：如何组织清晰、明确的指令。
 - **提供上下文**：让 AI 了解背景信息。
 - **明确输出格式**：指定你需要的代码格式、文档风格等。
 
-### [常用技巧 (Techniques)](./techniques.md)
+### [常用技巧 (Techniques)](./prompt-techniques.md)
 - **Zero-shot / Few-shot**：零样本与少样本提示。
 - **Chain of Thought (CoT)**：思维链，引导 AI 一步步思考。
 - **Role Play (角色扮演)**：通过设定角色（如“资深后端工程师”）来规范 AI 的语气和专业度。

@@ -2,7 +2,18 @@
 
 作为开发者，我们要利用好手中的“副驾驶” (Co-pilot)。
 
-## 1. Cursor
+## 1. Google Antigravity (Project IDX)
+这是 Google Deepmind 推出的下一代 **Agentic IDE**，也是你目前正在使用的工具。
+- **核心特色**：
+    - **Agentic Mode**：不仅是补全代码，更能规划任务 (Planning)、执行多步操作 (Execution) 和自我验证 (Verification)。
+    - **Artifacts**：自动生成和管理项目文档、设计方案，构建“外脑”记忆。
+    - **MCP Native**：原生支持 MCP 协议，连接本地工具与远程数据。
+    - **深度集成**：与 Google 生态（Gemini, Android, Flutter, Firebase）无缝结合。
+- **最佳实践**：
+    - **Task Boundary**：利用 Task 模式管理复杂任务，防止上下文迷失。
+    - **Knowledge Discovery**：利用 KI (Knowledge Items) 复用团队已有知识。
+
+## 2. Cursor
 Cursor 是目前最强大的 **AI 原生** (AI-Native) 代码编辑器，基于 VS Code 二次开发。
 - **核心特色**：
     - **全库索引 (Codebase Indexing)**：Cursor 能够索引整个项目的代码，理解所有的类、函数及其引用关系。

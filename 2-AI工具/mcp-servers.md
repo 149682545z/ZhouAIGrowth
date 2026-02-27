@@ -36,4 +36,10 @@
 
 ---
 
-> 💡 **Tip**: 可以在 [glama.ai/mcp/servers](https://glama.ai/mcp/servers) 找到更多社区贡献的 Server。
+```markdown
+## 更多资源
+
+> 💡 **提示**：你可以在以下平台探索更多社区贡献的 MCP Server：
+> - [Glama MCP Registry](https://glama.ai/mcp/servers)
+> - [mcp.so](https://mcp.so/)
+```
