@@ -1,27 +1,61 @@
-### Legacy Code Modernization
-- Convert Class Components to Functional Components (React/Vue).
-- Use `script setup` and Composition API for Vue 3.
-- Replace `var` with `let`/`const`.
-- Convert CommonJS (`require`) to ES Modules (`import`).
-- Preserve all original logic and side effects unless explicitly redundant.
+### 遗留代码现代化
 
-### DRY (Don't Repeat Yourself)
-- Identify duplicated logic across files.
-- Extract shared logic into `src/utils/` or `src/composables/`.
-- Create pure functions where possible to ease testing.
-- Update all call sites to use the new abstraction.
+- 转换类组件为函数式组件 (React/Vue)。
+- 在 Vue 3 中使用 `script setup` 和组合式 API。
+- 将 `var` 替换为 `let`/`const`。
+- 将 CommonJS (`require`) 转换为 ES 模块 (`import`)。
+- 除非由于冗余，否则保留所有原始逻辑和副作用。
 
-### Naming & Readability
-- Rename variables to be descriptive (e.g., `isVisible` instead of `flag`).
-- Use Guard Clauses (early returns) to flatten deeply nested `if/else` structures.
-- Ensure function names start with a verb (e.g., `fetchUser`, `handleClick`).
+### DRY (不要重复自己)
 
-### Type Augmentation (TS)
-- Infer types for untyped JavaScript code.
-- Avoid `any`; use specific interfaces or generics.
-- Generate `interface` or `type` definitions in strict PascalCase.
+- 识别跨文件的重复逻辑。
+- 将共享逻辑提取到 `src/utils/` 或 `src/composables/` 中。
+- 尽可能创建纯函数以方便测试。
+- 更新所有调用位置以使用新的抽象。
 
-### Output Format
-- Present the refactored code in a single code block.
-- If multiple files are changed, use multiple blocks with `filename` headers.
-- Briefly summarize the architectural changes (e.g., "Extracted date logic to `dateUtils.ts`").
+### 命名与可读性
+
+- 重命名变量以具有描述性（例如，用 `isVisible` 代替 `flag`）。
+- 使用守卫语句（提前返回）来扁平化深层嵌套的 `if/else` 结构。
+- 确保函数名以动词开头（例如 `fetchUser`, `handleClick`）。
+
+### 类型增强 (TS)
+
+- 为未定义类型的 JavaScript 代码推断类型。
+- 避免使用 `any`；使用特定的接口或泛型。
+- 以严格的 PascalCase 生成 `interface` 或 `type` 定义。
+
+### 正则表达式 (Regex)
+
+- 优先考虑可读性而非简洁性。
+- 对复杂模式使用命名捕获组 `(?<name>...)`。
+- 避免灾难性回溯（嵌套量词）。
+- 使用边缘情况进行测试（空字符串、Unicode、最大长度）。
+
+### SQL 查询
+
+- 使用通用表表达式 (CTE) (`WITH ...`) 提高可读性，而不是嵌套子查询。
+- 将关键字格式化为大写。
+- 避免使用 `SELECT *`；显式列出所有列。
+- 在编写 `WHERE` 子句 (ARG/SAR) 时考虑索引。
+
+### Cron 表达式
+
+- 在易于阅读的注释中明确说明计划任务。
+- 如果时间至关重要，请处理时区差异。
+- 使用标准的 5 字段格式，除非需要秒 (Quartz)。
+
+### JQ / Shell / Awk
+
+- 使用管道 `|` 逻辑地链接命令。
+- 处理 Shell 脚本中的错误（退出代码）。
+- 在生成的 Bash 脚本中使用 `set -e`。
+
+### 输出格式
+
+- 在单个代码块中呈现重构后的代码。
+- 如果更改了多个文件，请使用带有 `filename` 标题的多个代码块。
+- 简要总结架构更改（例如：“将日期逻辑提取到 `dateUtils.ts`”）。
+- 对应所请求语法的标准代码块。
+- 对关键组件的简要说明（例如：“捕获电子邮件域”）。
+- 用于验证的示例输入和匹配的输出。

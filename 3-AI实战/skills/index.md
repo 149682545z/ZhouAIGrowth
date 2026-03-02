@@ -29,6 +29,11 @@ title: Skills
       <a href="/Awesome-AI-Pedia/ai/skills/安装skills">安装skills</a>
     </div>
   </div>
+  <div class="article-item">
+    <div class="article-item-title">
+      <a href="/Awesome-AI-Pedia/ai/skills/frontend-design">前端设计</a>
+    </div>
+  </div>
 </div>
 
 <style>
